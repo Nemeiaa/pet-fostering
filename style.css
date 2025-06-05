@@ -1,0 +1,126 @@
+/* Use a modern, easy-to-read font for the whole page */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* Light teal background for a calm feel */
+}
+
+/* Simple CTA banner with blended teal background and image */
+.cta-banner {
+  background: 
+    linear-gradient(rgba(43, 179, 192, 0.7), rgba(43, 179, 192, 0.7)),
+    url('img/cta-bg.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 60px 24px 60px 24px; /* More space above and below */
+  min-height: 300px; /* Taller background for the section */
+}
+
+.cta-banner h1 {
+  color: #fff;
+  font-size: 2.5em; /* Larger heading */
+  margin-bottom: 32px; /* More space below heading */
+}
+
+.cta-banner p {
+  color: #e0f7fa;
+  font-size: 1.3em; /* Slightly larger text */
+  margin-bottom: 42px; /* More space below description */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 16px 42px; /* Larger button */
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+/* Simple header styling to match the site palette */
+.site-header {
+  background-color: #0077b6; /* Deep blue for consistency */
+  padding: 18px 0;
+  text-align: center;
+}
+
+.site-header h2 {
+  color: #ffffff;
+  font-size: 2em;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Info section with two columns: image and text */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto;
+  display: table;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+/* Image column */
+.info-image {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  background: #e6f7fa;
+  padding: 20px;
+}
+
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-right: 30px; /* Space between image and text */
+  box-shadow: none; /* Remove box shadow so image blends in */
+}
+
+/* Text column */
+.info-text {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  padding: 30px 24px;
+  text-align: center;
+}
+
+.info-text h3 {
+  color: #0077b6;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.5em;
+}
+
+.info-text p {
+  color: #333;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 700px) {
+  .info-section {
+    display: block;
+  }
+  .info-image,
+  .info-text {
+    display: block;
+    width: 100%;
+  }
+  .info-text {
+    padding: 20px 10px;
+  }
+}
